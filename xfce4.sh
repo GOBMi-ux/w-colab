@@ -17,6 +17,14 @@ echo "Install Firefox"
 echo "===================================="
 sudo apt install firefox -y > /dev/null 2>&1
 echo "===================================="
+echo "Install Brave"
+echo "===================================="
+sudo apt install brave -y > /dev/null 2>&1
+echo "===================================="
+echo "Install Winehq-stable"
+echo "===================================="
+sudo apt install winehq-stable -y > /dev/null 2>&1
+echo "===================================="
 echo "Install RDP"
 echo "===================================="
 sudo apt install -y xrdp > /dev/null 2>&1
