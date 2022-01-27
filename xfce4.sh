@@ -25,11 +25,24 @@ echo "deb [signed-by=/usr/share/keyrings/brave-browser-archive-keyring.gpg arch=
 sudo apt update
 sudo apt install brave-browser
 echo "===================================="
+echo "Python 3"
+echo "===================================="
+sudo apt update
+sudo apt install software-properties-common
+sudo add-apt-repository ppa:deadsnakes/ppa
+sudo apt update
+sudo apt install python3.8
+echo "===================================="
 echo "Install Winehq-stable"
 echo "===================================="
 sudo dpkg --add-architecture i386
 sudo apt update
 sudo apt install wine64 wine32
+echo "===================================="
+echo "Install PeaZip"
+echo "===================================="
+wget -c https://github.com/peazip/PeaZip/releases/download/7.7.0/peazip_7.7.0.LINUX.x86_64.GTK2.deb
+sudo apt install ./peazip_7.7.0.LINUX.x86_64.GTK2.deb
 echo "===================================="
 echo "Install RDP"
 echo "===================================="
