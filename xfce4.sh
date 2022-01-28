@@ -33,6 +33,15 @@ sudo add-apt-repository ppa:deadsnakes/ppa
 sudo apt update
 sudo apt install python3.8
 echo "===================================="
+echo "Install WineHQ"
+echo "===================================="
+sudo dpkg --add-architecture i386 
+wget -nc https://dl.winehq.org/wine-builds/winehq.key
+sudo apt-key add winehq.key
+sudo add-apt-repository 'deb https://dl.winehq.org/wine-builds/ubuntu/ bionic main'
+sudo apt update
+sudo apt install --install-recommends winehq-stable
+echo "===================================="
 echo "Install PlayOnLinux"
 echo "===================================="
 wget https://dl.winehq.org/wine-builds/Release.key
@@ -45,11 +54,12 @@ echo "===================================="
 wget -c https://github.com/peazip/PeaZip/releases/download/7.7.0/peazip_7.7.0.LINUX.x86_64.GTK2.deb
 sudo apt install ./peazip_7.7.0.LINUX.x86_64.GTK2.deb
 echo "===================================="
-echo "Install NOTEPAD++"
+echo "Install Laverna"
 echo "===================================="
-sudo apt install snapd
-sudo systemctl enable --now snapd.socket
-sudo snap install notepad-plus-plus
+sudo apt-get update
+wget https://github.com/Laverna/laverna/releases/download/0.7.51/laverna-0.7.51-linux-x64.zip
+unzip laverna-0.7.51-linux-x64.zip
+sudo ./laverna
 echo "===================================="
 echo "Install RDP"
 echo "===================================="
