@@ -48,7 +48,7 @@ echo "===================================="
 sudo apt-get update
 sudo apt-get upgrade
 sudo wget https://github.com/subhra74/xdm/releases/download/7.2.11/xdm-setup-7.2.11.tar.xz
-tar -xf xdm-setup-7.2.11
+tar -xf xdm-setup-7.2.11.tar.xz
 sudo ./install.sh
 echo "===================================="
 echo "Install PeaZip"
