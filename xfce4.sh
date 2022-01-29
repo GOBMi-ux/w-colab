@@ -33,33 +33,25 @@ sudo add-apt-repository ppa:deadsnakes/ppa
 sudo apt update
 sudo apt install python3.8
 echo "===================================="
-echo "Install WineHQ"
+echo "Install Telegram"
 echo "===================================="
-sudo dpkg --add-architecture i386 
-wget -nc https://dl.winehq.org/wine-builds/winehq.key
-sudo apt-key add winehq.key
-sudo add-apt-repository 'deb https://dl.winehq.org/wine-builds/ubuntu/ bionic main'
-sudo apt update
-sudo apt install --install-recommends winehq-stable
+sudo add-apt-repository ppa:atareao/telegram
+sudo apt update && sudo apt install telegram
 echo "===================================="
-echo "Install PlayOnLinux"
+echo "Install Xtreme Download Manager"
 echo "===================================="
-wget https://dl.winehq.org/wine-builds/Release.key
-sudo apt-key add Release.key
-sudo apt-add-repository 'https://dl.winehq.org/wine-builds/ubuntu/'
+sudo add-apt-repository ppa:noobslab/apps
 sudo apt-get update
+sudo apt-get install xdman-downloader
 echo "===================================="
 echo "Install PeaZip"
 echo "===================================="
 wget -c https://github.com/peazip/PeaZip/releases/download/7.7.0/peazip_7.7.0.LINUX.x86_64.GTK2.deb
 sudo apt install ./peazip_7.7.0.LINUX.x86_64.GTK2.deb
 echo "===================================="
-echo "Install Laverna"
+echo "Install gedit"
 echo "===================================="
-sudo apt-get update
-wget https://github.com/Laverna/laverna/releases/download/0.7.51/laverna-0.7.51-linux-x64.zip
-unzip laverna-0.7.51-linux-x64.zip
-sudo ./laverna
+sudo apt-get install gedit
 echo "===================================="
 echo "Install RDP"
 echo "===================================="
