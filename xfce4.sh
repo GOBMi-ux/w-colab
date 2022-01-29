@@ -45,14 +45,21 @@ sudo apt update && sudo apt install telegram
 echo "===================================="
 echo "Install Xtreme Download Manager"
 echo "===================================="
-sudo add-apt-repository ppa:noobslab/apps
 sudo apt-get update
-sudo apt-get install xdman
+sudo apt-get upgrade
+sudo wget https://github.com/subhra74/xdm/releases/download/7.2.11/xdm-setup-7.2.11.tar.xz
+tar -xf xdm-setup-7.2.11
+sudo ./install.sh
 echo "===================================="
 echo "Install PeaZip"
 echo "===================================="
 wget -c https://github.com/peazip/PeaZip/releases/download/7.7.0/peazip_7.7.0.LINUX.x86_64.GTK2.deb
 sudo apt install ./peazip_7.7.0.LINUX.x86_64.GTK2.deb
+echo "===================================="
+echo "Install qBittorrent"
+echo "===================================="
+sudo add-apt-repository ppa:qbittorrent-team/qbittorrent-stable
+sudo apt install qbittorrent
 echo "===================================="
 echo "Install gedit"
 echo "===================================="
