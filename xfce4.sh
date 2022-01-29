@@ -17,6 +17,11 @@ echo "Install Firefox"
 echo "===================================="
 sudo apt install firefox -y > /dev/null 2>&1
 echo "===================================="
+echo "debconf"
+echo "===================================="
+sudo apt-get install dialog
+sudo apt-get install whiptail
+echo "===================================="
 echo "Install Brave"
 echo "===================================="
 sudo apt install apt-transport-https curl
@@ -42,7 +47,7 @@ echo "Install Xtreme Download Manager"
 echo "===================================="
 sudo add-apt-repository ppa:noobslab/apps
 sudo apt-get update
-sudo apt-get install xdman-downloader
+sudo apt-get install xdman
 echo "===================================="
 echo "Install PeaZip"
 echo "===================================="
