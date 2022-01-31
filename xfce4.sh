@@ -65,6 +65,12 @@ echo "Install gedit"
 echo "===================================="
 sudo apt-get install gedit
 echo "===================================="
+echo "Install Steam"
+echo "===================================="
+sudo add-apt-repository multiverse
+sudo apt update
+sudo apt install steam
+echo "===================================="
 echo "Install RDP"
 echo "===================================="
 sudo apt install -y xrdp > /dev/null 2>&1
