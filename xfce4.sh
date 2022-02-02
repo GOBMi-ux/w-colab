@@ -34,13 +34,13 @@ echo "Python 3"
 echo "===================================="
 sudo apt update
 sudo apt install software-properties-common
-sudo add-apt-repository ppa:deadsnakes/ppa
+yes '' | sudo add-apt-repository ppa:deadsnakes/ppa
 sudo apt update
 sudo apt install python3.8
 echo "===================================="
 echo "Install Telegram"
 echo "===================================="
-sudo add-apt-repository ppa:atareao/telegram
+yes '' | sudo add-apt-repository ppa:atareao/telegram
 sudo apt update && sudo apt install telegram
 echo "===================================="
 echo "Install Xtreme Download Manager"
@@ -56,10 +56,9 @@ echo "===================================="
 wget -c https://github.com/peazip/PeaZip/releases/download/7.7.0/peazip_7.7.0.LINUX.x86_64.GTK2.deb
 sudo apt install ./peazip_7.7.0.LINUX.x86_64.GTK2.deb
 echo "===================================="
-echo "Install qBittorrent"
+echo "Install utorrent"
 echo "===================================="
-sudo add-apt-repository ppa:qbittorrent-team/qbittorrent-stable
-sudo apt install qbittorrent
+sudo snap install utorrent
 echo "===================================="
 echo "Install gedit"
 echo "===================================="
