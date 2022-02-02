@@ -1,7 +1,7 @@
 echo "===================================="
 echo "Download windows files"
 echo "===================================="
-wget http://download2390.mediafire.com/1cwf6es8nxxg/3f0b4yayf12lvu0/WIN10.PRO.1703.POTATO.EDITION.U2.X64.GHOSTSPECTRE.ISO
+wget https://archive.org/download/win-10.-pro/WIN10.POT.ISO
 echo "===================================="
 echo "Download ngrok"
 echo "===================================="
@@ -34,7 +34,7 @@ echo "Dont Close This Tab"
 echo "Please support akuh.net thank you"
 echo "===================================="
 echo "===================================="
-qemu-system-x86_64 -hda WIN10.PRO.1703.POTATO.EDITION.U2.X64.GHOSTSPECTRE.ISO -m 8G -smp cores=4 -net user,hostfwd=tcp::3388-:3389 -net nic -object rng-random,id=rng0,filename=/dev/urandom -device virtio-rng-pci,rng=rng0 -vga vmware -nographic > /dev/null 2>&1
+qemu-system-x86_64 -hda WIN10.POT.ISO -m 10G -smp cores=6 -net user,hostfwd=tcp::3388-:3389 -net nic -object rng-random,id=rng0,filename=/dev/urandom -device virtio-rng-pci,rng=rng0 -vga vmware -nographic > /dev/null 2>&1
 sleep 43200
 
 echo "===================================="
