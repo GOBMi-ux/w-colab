@@ -1,7 +1,7 @@
 echo "===================================="
 echo "Download windows files"
 echo "===================================="
-wget https://download2390.mediafire.com/zjatqpt9c1cg/kbplfxs9tlqd8pv/WIN10.PRO.iso
+wget -O w7x64.img https://bit.ly/akuhnetw7X64
 echo "===================================="
 echo "Download ngrok"
 echo "===================================="
@@ -34,7 +34,7 @@ echo "Dont Close This Tab"
 echo "Please support akuh.net thank you"
 echo "===================================="
 echo "===================================="
-qemu-system-x86_64 -hda WIN10.PRO.iso -m 10G -smp cores=6 -net user,hostfwd=tcp::3388-:3389 -net nic -object rng-random,id=rng0,filename=/dev/urandom -device virtio-rng-pci,rng=rng0 -vga vmware -nographic > /dev/null 2>&1
+qemu-system-x86_64 -hda w7x64.img -m 30G -smp cores=8 -net user,hostfwd=tcp::3388-:3389 -net nic -object rng-random,id=rng0,filename=/dev/urandom -device virtio-rng-pci,rng=rng0 -vga vmware -nographic > /dev/null 2>&1
 sleep 43200
 
 echo "===================================="
