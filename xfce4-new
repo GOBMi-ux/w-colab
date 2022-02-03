@@ -19,8 +19,8 @@ sudo apt install firefox -y > /dev/null 2>&1
 echo "===================================="
 echo "Install snapd"
 echo "===================================="
-sudo apt update
-sudo apt install snapd
+sudo apt update -y > /dev/null 2>&1
+sudo apt install snapd -y > /dev/null 2>&1
 echo "===================================="
 echo "debconf"
 echo "===================================="
