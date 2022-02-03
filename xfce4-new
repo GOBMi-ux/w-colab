@@ -17,10 +17,19 @@ echo "Install Firefox"
 echo "===================================="
 sudo apt install firefox -y > /dev/null 2>&1
 echo "===================================="
+echo "Install snapd"
+echo "===================================="
+sudo apt update
+sudo apt install snapd
+echo "===================================="
 echo "debconf"
 echo "===================================="
 sudo apt-get install dialog > /dev/null 2>&1
 sudo apt-get install whiptail > /dev/null 2>&1
+echo "===================================="
+echo "Install JDownloader2"
+echo "===================================="
+sudo snap install jdownloader2
 echo "===================================="
 echo "Install Brave"
 echo "===================================="
