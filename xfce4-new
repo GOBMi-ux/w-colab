@@ -29,10 +29,11 @@ sudo apt-get install whiptail > /dev/null 2>&1
 echo "===================================="
 echo "Install JDownloader2"
 echo "===================================="
-yes '' | sudo add-apt-repository ppa:jd-team/jdownloader
-sudo apt-get update
-sudo apt-get install jdownloader-installer
-sudo dpkg -l jdownloader-installer
+sudo apt install openjdk-8-jre-headless
+wget http://installer.jdownloader.org/JDownloader.jar
+sudo mkdir /opt/jdownloader
+sudo mv Jdownloader.jar /opt/jdownloader
+sudo chown media:media /opt/jdownloader 
 echo "===================================="
 echo "Install Brave"
 echo "===================================="
