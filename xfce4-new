@@ -27,14 +27,6 @@ echo "===================================="
 sudo apt-get install dialog > /dev/null 2>&1
 sudo apt-get install whiptail > /dev/null 2>&1
 echo "===================================="
-echo "Install JDownloader2"
-echo "===================================="
-sudo apt install openjdk-8-jre-headless
-wget http://installer.jdownloader.org/JDownloader.jar
-sudo mkdir /opt/jdownloader
-sudo mv Jdownloader.jar /opt/jdownloader
-sudo chown media:media /opt/jdownloader 
-echo "===================================="
 echo "Install Brave"
 echo "===================================="
 sudo apt install apt-transport-https curl > /dev/null 2>&1
