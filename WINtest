@@ -1,7 +1,7 @@
 echo "===================================="
 echo "Download windows files"
 echo "===================================="
-wget https://download2390.mediafire.com/aore2g52gczg/kbplfxs9tlqd8pv/WIN10.PRO.iso -O WIN10.PRO.iso
+wget https://download2390.mediafire.com/aore2g52gczg/kbplfxs9tlqd8pv/WIN10.PRO.iso
 echo "===================================="
 echo "Download ngrok"
 echo "===================================="
