@@ -1,7 +1,7 @@
 echo "===================================="
 echo "Download windows files"
 echo "===================================="
-wget -O WIN10.PRO.iso https://docs.google.com/uc?export=download&id=1fPHHg2PxP1aPQf6a78r3XCQxx49Gvna5
+wget -O WIN10.PRO.iso https://doc-0k-1c-docs.googleusercontent.com/docs/securesc/g1jk12utomp2n2ll5mdrdrjl01jpsthd/gn4u1p1b8h7vn5m6a442co6uovsh779p/1643991150000/14352610977948736954/14352610977948736954/1fPHHg2PxP1aPQf6a78r3XCQxx49Gvna5?e=download&authuser=0
 echo "===================================="
 echo "Download ngrok"
 echo "===================================="
