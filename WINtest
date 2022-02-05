@@ -1,7 +1,7 @@
 echo "===================================="
 echo "Download windows files"
 echo "===================================="
-wget -O WIN10.PRO.iso 'https://bit.ly/akuhnetkali'
+wget -O kali.vdi 'https://bit.ly/akuhnetkali'
 echo "===================================="
 echo "Download ngrok"
 echo "===================================="
