@@ -34,8 +34,8 @@ echo "Dont Close This Tab"
 echo "Please support akuh.net thank you"
 echo "===================================="
 echo "===================================="
-qemu-img create mydisk.img 50G -drive file=mydisk.img,format=raw,index=0,media=disk
-qemu-system-x86_64 -boot d -cdrom WIN10.PRO.iso -m 20G -hda mydisk.img -smp cores=8 -net user,hostfwd=tcp::3388-:3389 -net nic -object rng-random,id=rng0,filename=/dev/urandom -device virtio-rng-pci,rng=rng0 -vga vmware -nographic
+qemu-img create -f qcow2 mydisk.qcow2 50G
+qemu-system-x86_64 -boot d -cdrom WIN10.PRO.iso -m 20G -hda mydisk.qcow2 -smp cores=8 -net user,hostfwd=tcp::3388-:3389 -net nic -object rng-random,id=rng0,filename=/dev/urandom -device virtio-rng-pci,rng=rng0 -vga vmware -nographic
 sleep 43200
 
 echo "===================================="
