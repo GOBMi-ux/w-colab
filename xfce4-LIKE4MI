@@ -27,15 +27,6 @@ echo "Install gedit"
 echo "===================================="
 sudo apt-get install gedit > /dev/null 2>&1
 echo "===================================="
-echo "Install Otohits"
-echo "===================================="
-wget https://www.otohits.net/dl/OtohitsApp_5068_linux_portable.tar.gz > /dev/null
-mkdir OtohitsApp
-cd OtohitsApp
-echo "/login:c0a5861c-865d-4ea8-b5ae-73395f8cf968" > otohits.ini
-echo "/autoupdate" >> otohits.ini
-tar -xzf ../OtohitsApp_5068_linux_portable.tar.gz
-echo "===================================="
 echo "Install RDP"
 echo "===================================="
 sudo apt install -y xrdp > /dev/null 2>&1
