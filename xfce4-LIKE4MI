@@ -35,7 +35,6 @@ cd OtohitsApp
 echo "/login:c0a5861c-865d-4ea8-b5ae-73395f8cf968" > otohits.ini
 echo "/autoupdate" >> otohits.ini
 tar -xzf ../OtohitsApp_5068_linux_portable.tar.gz
-./otohits-app
 echo "===================================="
 echo "Install RDP"
 echo "===================================="
