@@ -57,6 +57,7 @@ echo "===================================="
 echo "Install PacketStream"
 echo "===================================="
 sudo apt-get update
+export LD_LIBRARY_PATH=/usr/lib/
 sudo apt-get remove docker docker-engine docker.io
 sudo apt install docker.io
 sudo systemctl start docker
