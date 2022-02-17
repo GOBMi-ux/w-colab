@@ -57,6 +57,10 @@ sudo apt-get install gedit > /dev/null 2>&1
 echo "===================================="
 echo "Install CrossOver"
 echo "===================================="
+sudo apt-get update
+sudo apt-get install gir1.2-vte-2.91
+sudo apt-get update -y
+sudo apt-get install -y desktop-file-utils
 sudo wget http://crossover.codeweavers.com/redirect/crossover.deb
 sudo apt-get install wget
 sudo dpkg --add-architecture i386
