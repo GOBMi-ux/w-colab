@@ -58,6 +58,8 @@ sudo apt-get install gedit > /dev/null 2>&1
 echo "===================================="
 echo "Install CrossOver"
 echo "===================================="
+sudo apt-get update -y
+sudo apt-get install -y libconfig-dev
 sudo apt-get update
 sudo apt-get install gir1.2-vte-2.91
 sudo apt-get update -y
