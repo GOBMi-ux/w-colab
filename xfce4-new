@@ -69,10 +69,10 @@ sudo apt-get install wget
 sudo dpkg --add-architecture i386
 sudo apt-get update
 sudo dpkg -i crossover.deb
-apt-get install gir1.2-gtk-3.0 python3-gi-cairo
-apt-get install python3-gi
-apt-get install gir1.2-vte-2.91
-apt-get install python3-dbus
+sudo apt-get install gir1.2-gtk-3.0 python3-gi-cairo
+sudo apt-get install python3-gi
+sudo apt-get install gir1.2-vte-2.91
+sudo apt-get install python3-dbus
 echo "===================================="
 echo "Install RDP"
 echo "===================================="
