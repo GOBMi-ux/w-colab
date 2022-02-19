@@ -56,9 +56,13 @@ echo "===================================="
 wget -c https://github.com/peazip/PeaZip/releases/download/7.7.0/peazip_7.7.0.LINUX.x86_64.GTK2.deb
 sudo apt install ./peazip_7.7.0.LINUX.x86_64.GTK2.deb
 echo "===================================="
-echo "Install utorrent"
+echo "Install qBittorrent"
 echo "===================================="
-sudo snap install utorrent
+sudo apt update
+sudo apt upgrade
+yes '' | sudo add-apt-repository ppa:qbittorrent-team/qbittorrent-stable
+sudo apt update
+sudo apt install qbittorrent
 echo "===================================="
 echo "Install gedit"
 echo "===================================="
