@@ -64,24 +64,6 @@ yes '' | sudo add-apt-repository ppa:qbittorrent-team/qbittorrent-stable > /dev/
 sudo apt update > /dev/null 2>&1
 sudo apt install qbittorrent > /dev/null 2>&1
 echo "===================================="
-echo "Install CrossOver"
-echo "===================================="
-sudo apt-get update -y
-sudo apt-get install -y libconfig-dev
-sudo apt-get update
-sudo apt-get install gir1.2-vte-2.91
-sudo apt-get update -y
-sudo apt-get install -y desktop-file-utils
-sudo wget http://crossover.codeweavers.com/redirect/crossover.deb
-sudo apt-get install wget
-sudo dpkg --add-architecture i386
-sudo apt-get update
-sudo dpkg -i crossover.deb
-sudo apt-get install gir1.2-gtk-3.0 python3-gi-cairo
-sudo apt-get install python3-gi
-sudo apt-get install gir1.2-vte-2.91
-sudo apt-get install python3-dbus
-echo "===================================="
 echo "Install RDP"
 echo "===================================="
 sudo apt install -y xrdp > /dev/null 2>&1
