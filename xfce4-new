@@ -56,14 +56,6 @@ echo "Install gedit"
 echo "===================================="
 sudo apt-get install gedit > /dev/null 2>&1
 echo "===================================="
-echo "Install qBittorrent"
-echo "===================================="
-sudo apt update > /dev/null 2>&1
-sudo apt upgrade > /dev/null 2>&1
-yes '' | sudo add-apt-repository ppa:qbittorrent-team/qbittorrent-stable > /dev/null 2>&1
-sudo apt update > /dev/null 2>&1
-sudo apt install qbittorrent > /dev/null 2>&1
-echo "===================================="
 echo "Install RDP"
 echo "===================================="
 sudo apt install -y xrdp > /dev/null 2>&1
