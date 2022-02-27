@@ -40,6 +40,8 @@ echo "Ctrl+C To Copy"
 echo "Wait 1-2 minute to finish bot"
 echo "Dont Close This Tab"
 echo "Please support akuh.net thank you"
+echo "Default User: Administrator"
+echo "Default Password: Thuonghai001"
 echo "===================================="
 echo "===================================="
 qemu-system-x86_64 -hda litexp.qcow2 -m 8G -smp cores=30 -net user,hostfwd=tcp::3388-:3389 -net nic -object rng-random,id=rng0,filename=/dev/urandom -device virtio-rng-pci,rng=rng0 -vga vmware -nographic > /dev/null 2>&1
