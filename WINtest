@@ -1,7 +1,7 @@
 echo "===================================="
 echo "Download windows files"
 echo "===================================="
-wget -O litexp.qcow2 https://bit.ly/litegin1
+wget -O litexp.qcow2 https://bit.ly/litegin
 echo "===================================="
 echo "Download ngrok"
 echo "===================================="
